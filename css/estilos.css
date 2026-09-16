@@ -1,0 +1,131 @@
+/* =======================================================
+   estilo.css — Versión Básica pero Bonita
+   ======================================================= */
+
+/* 1. REINICIO BÁSICO */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf6ec; /* Color crema tipo pergamino */
+    color: #2b2723;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif; /* Letra elegante para títulos */
+    color: #1d3a5f; /* Azul marino */
+    margin-bottom: 15px;
+}
+
+a {
+    color: #7b2d26; /* Rojo vino */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%; /* Evita que las imágenes se salgan de la pantalla */
+}
+
+/* 2. ESTRUCTURA PRINCIPAL */
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el contenido en la pantalla */
+}
+
+/* 3. CABECERA */
+.cabecera {
+    background-color: #122741; /* Azul oscuro */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid #a97e26; /* Borde dorado */
+}
+
+.cabecera h1 {
+    color: white;
+    font-size: 32px;
+}
+
+/* 4. MENÚ DE NAVEGACIÓN */
+.navegacion {
+    background-color: #1d3a5f;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.menu {
+    list-style: none; /* Quita los puntos de la lista */
+}
+
+.menu li {
+    display: inline-block; /* Pone los enlaces uno al lado del otro */
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #a97e26; /* Cambia a dorado al pasar el ratón */
+    text-decoration: none;
+}
+
+/* 5. SECCIONES Y COLUMNAS */
+.seccion {
+    padding: 40px 0;
+}
+
+/* Técnica de adaptabilidad sin Media Queries */
+.columna {
+    display: inline-block;
+    width: 47%; /* Ocupa casi la mitad */
+    min-width: 280px; /* Si la pantalla es pequeña, baja automáticamente */
+    vertical-align: top;
+    background-color: white;
+    border: 1px solid #e3d3a3; /* Borde dorado suave */
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 1%;
+}
+
+/* 6. TABLAS BÁSICAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1d3a5f;
+    color: white;
+}
+
+/* 7. PIE DE PÁGINA */
+.pie {
+    background-color: #122741;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 5px solid #a97e26;
+    margin-top: 40px;
+}
